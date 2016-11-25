@@ -1,0 +1,10 @@
+ngo==1.9
+argparse==1.2.1
+gTTS==1.1.6
+gTTS-token==1.1.1
+httplib2==0.9.2
+pyttsx==1.1
+requests==2.12.1
+urllib3==1.19.1
+wsgiref==0.1.2
+

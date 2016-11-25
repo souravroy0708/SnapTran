@@ -1,0 +1,421 @@
+ERROR 2016-11-25 04:16:32,759 base 9405 139751457814272 Internal Server Error: /text-to-speech/
+Traceback (most recent call last):
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/surabh/hackathon/snaptran/snapapp/views.py", line 35, in text_to_speech
+    if converted_text:
+UnboundLocalError: local variable 'converted_text' referenced before assignment
+ERROR 2016-11-25 04:22:01,871 base 9497 140580923373312 Internal Server Error: /text-to-speech/
+Traceback (most recent call last):
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/surabh/hackathon/snaptran/snapapp/views.py", line 33, in text_to_speech
+    converted_text =get_text_obj ["data"]["translations"]["translatedText"]
+TypeError: string indices must be integers
+ERROR 2016-11-25 04:22:55,850 base 9505 139755381470976 Internal Server Error: /text-to-speech/
+Traceback (most recent call last):
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/surabh/hackathon/snaptran/snapapp/views.py", line 34, in text_to_speech
+    converted_text =get_text_obj ["data"]["translations"]["translatedText"]
+TypeError: string indices must be integers
+ERROR 2016-11-25 04:23:00,576 base 9505 139755381470976 Internal Server Error: /text-to-speech/
+Traceback (most recent call last):
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/surabh/hackathon/snaptran/snapapp/views.py", line 34, in text_to_speech
+    converted_text =get_text_obj ["data"]["translations"]["translatedText"]
+TypeError: string indices must be integers
+ERROR 2016-11-25 04:45:38,804 base 9965 140661628974848 Internal Server Error: /text-to-speech/
+Traceback (most recent call last):
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/surabh/hackathon/snaptran/snapapp/views.py", line 35, in text_to_speech
+    response = urllib2.urlopen(URL)
+  File "/usr/lib/python2.7/urllib2.py", line 127, in urlopen
+    return _opener.open(url, data, timeout)
+  File "/usr/lib/python2.7/urllib2.py", line 410, in open
+    response = meth(req, response)
+  File "/usr/lib/python2.7/urllib2.py", line 523, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/usr/lib/python2.7/urllib2.py", line 448, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python2.7/urllib2.py", line 382, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python2.7/urllib2.py", line 531, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 400: Bad Request
+ERROR 2016-11-25 04:48:31,347 base 9997 140169925060352 Internal Server Error: /text-to-speech/
+Traceback (most recent call last):
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/surabh/hackathon/snaptran/snapapp/views.py", line 36, in text_to_speech
+    response = urllib2.urlopen(URL)
+  File "/usr/lib/python2.7/urllib2.py", line 127, in urlopen
+    return _opener.open(url, data, timeout)
+  File "/usr/lib/python2.7/urllib2.py", line 410, in open
+    response = meth(req, response)
+  File "/usr/lib/python2.7/urllib2.py", line 523, in http_response
+    'http', request, response, code, msg, hdrs)
+  File "/usr/lib/python2.7/urllib2.py", line 448, in error
+    return self._call_chain(*args)
+  File "/usr/lib/python2.7/urllib2.py", line 382, in _call_chain
+    result = func(*args)
+  File "/usr/lib/python2.7/urllib2.py", line 531, in http_error_default
+    raise HTTPError(req.get_full_url(), code, msg, hdrs, fp)
+HTTPError: HTTP Error 400: Bad Request
+ERROR 2016-11-25 05:17:07,585 base 10521 140293709223680 Internal Server Error: /text-to-speech/
+Traceback (most recent call last):
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/surabh/hackathon/snaptran/snapapp/views.py", line 36, in text_to_speech
+    response = urllib.urlopen(url)
+NameError: global name 'url' is not defined
+ERROR 2016-11-25 05:22:13,178 base 10581 140205776606976 Internal Server Error: /text-to-speech/
+Traceback (most recent call last):
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/surabh/hackathon/snaptran/snapapp/views.py", line 37, in text_to_speech
+    data = json.loads(response)
+  File "/usr/lib/python2.7/json/__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+TypeError: expected string or buffer
+ERROR 2016-11-25 05:24:34,650 base 10581 140205776606976 Internal Server Error: /text-to-speech/
+Traceback (most recent call last):
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/surabh/hackathon/snaptran/snapapp/views.py", line 37, in text_to_speech
+    data = json.loads(response.read())
+  File "/usr/lib/python2.7/json/__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+TypeError: expected string or buffer
+ERROR 2016-11-25 05:24:41,348 base 10581 140205776606976 Internal Server Error: /text-to-speech/
+Traceback (most recent call last):
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/surabh/hackathon/snaptran/snapapp/views.py", line 37, in text_to_speech
+    data = json.loads(response.read())
+  File "/usr/lib/python2.7/json/__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "/usr/lib/python2.7/json/decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+TypeError: expected string or buffer
+ERROR 2016-11-25 06:04:10,486 base 11373 140556007204608 Internal Server Error: /text-to-speech/
+Traceback (most recent call last):
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/surabh/hackathon/snaptran/snapapp/views.py", line 48, in text_to_speech
+    print "file_path  ---- ",file_path
+NameError: global name 'file_path' is not defined
+ERROR 2016-11-25 06:04:43,124 base 11383 140574371235584 Internal Server Error: /text-to-speech/
+Traceback (most recent call last):
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/surabh/hackathon/snaptran/snapapp/views.py", line 47, in text_to_speech
+    file_path = "../stattic/speech_"+currenttimestamp+".wav" %(currenttimestamp)
+TypeError: cannot concatenate 'str' and 'int' objects
+ERROR 2016-11-25 07:20:20,645 base 12737 140210698499840 Internal Server Error: /text-to-speech/
+Traceback (most recent call last):
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/surabh/hackathon/snaptran/snapapp/views.py", line 39, in text_to_speech
+    converted_text = data['data']['translations'][0]['translatedText']
+KeyError: 'data'
+ERROR 2016-11-25 07:20:31,364 base 12737 140210698499840 Internal Server Error: /text-to-speech/
+Traceback (most recent call last):
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/surabh/hackathon/snaptran/snapapp/views.py", line 39, in text_to_speech
+    converted_text = data['data']['translations'][0]['translatedText']
+KeyError: 'data'
+ERROR 2016-11-25 07:27:19,995 base 12737 140210698499840 Internal Server Error: /text-to-speech/
+Traceback (most recent call last):
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/surabh/hackathon/snaptran/snapapp/views.py", line 39, in text_to_speech
+    converted_text = data['data']['translations'][0]['translatedText']
+KeyError: 'data'
+ERROR 2016-11-25 07:40:50,170 base 13118 140443484419840 Internal Server Error: /text-to-speech/
+Traceback (most recent call last):
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/surabh/hackathon/snaptran/snapapp/views.py", line 37, in text_to_speech
+    response = urllib.urlopen(URL)
+  File "/usr/lib/python2.7/urllib.py", line 87, in urlopen
+    return opener.open(url)
+  File "/usr/lib/python2.7/urllib.py", line 208, in open
+    return getattr(self, name)(url)
+  File "/usr/lib/python2.7/urllib.py", line 437, in open_https
+    h.endheaders(data)
+  File "/usr/lib/python2.7/httplib.py", line 969, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 829, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 791, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 1172, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 553, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+IOError: [Errno socket error] [Errno -2] Name or service not known
+ERROR 2016-11-25 07:41:27,605 base 13118 140443484419840 Internal Server Error: /text-to-speech/
+Traceback (most recent call last):
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/surabh/hackathon/snaptran/snapapp/views.py", line 37, in text_to_speech
+    response = urllib.urlopen(URL)
+  File "/usr/lib/python2.7/urllib.py", line 87, in urlopen
+    return opener.open(url)
+  File "/usr/lib/python2.7/urllib.py", line 208, in open
+    return getattr(self, name)(url)
+  File "/usr/lib/python2.7/urllib.py", line 437, in open_https
+    h.endheaders(data)
+  File "/usr/lib/python2.7/httplib.py", line 969, in endheaders
+    self._send_output(message_body)
+  File "/usr/lib/python2.7/httplib.py", line 829, in _send_output
+    self.send(msg)
+  File "/usr/lib/python2.7/httplib.py", line 791, in send
+    self.connect()
+  File "/usr/lib/python2.7/httplib.py", line 1172, in connect
+    self.timeout, self.source_address)
+  File "/usr/lib/python2.7/socket.py", line 553, in create_connection
+    for res in getaddrinfo(host, port, 0, SOCK_STREAM):
+IOError: [Errno socket error] [Errno -2] Name or service not known
+ERROR 2016-11-25 07:43:19,890 base 13163 140033208932096 Internal Server Error: /text-to-speech/
+Traceback (most recent call last):
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/surabh/hackathon/snaptran/snapapp/views.py", line 62, in text_to_speech
+    return_object = {"file_path":speech_path,"msg":msg,"converted_text":converted_text}
+UnboundLocalError: local variable 'speech_path' referenced before assignment
+ERROR 2016-11-25 08:56:35,538 base 13572 140399022974720 Internal Server Error: /text-to-speech/
+Traceback (most recent call last):
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/surabh/hackathon/snaptran/snapapp/views.py", line 35, in text_to_speech
+    response = urllib.urlopen(URL)
+  File "/usr/lib/python2.7/urllib.py", line 87, in urlopen
+    return opener.open(url)
+  File "/usr/lib/python2.7/urllib.py", line 180, in open
+    fullurl = unwrap(toBytes(fullurl))
+  File "/usr/lib/python2.7/urllib.py", line 1055, in toBytes
+    " contains non-ASCII characters")
+UnicodeError: URL u'https://www.googleapis.com/language/translate/v2?key=AIzaSyAaSZmcHV9aEkY9sjHmrZxuc2F7Qm2Khgw&q=2016 Hackathon \u092e\u0947\u0902 \u0906\u092a\u0915\u093e \u0938\u094d\u0935\u093e\u0917\u0924 \u0939\u0948&target=en&                              source=hi' contains non-ASCII characters
+ERROR 2016-11-25 08:56:57,294 base 13572 140399022974720 Internal Server Error: /text-to-speech/
+Traceback (most recent call last):
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/surabh/hackathon/snaptran/snapapp/views.py", line 35, in text_to_speech
+    response = urllib.urlopen(URL)
+  File "/usr/lib/python2.7/urllib.py", line 87, in urlopen
+    return opener.open(url)
+  File "/usr/lib/python2.7/urllib.py", line 180, in open
+    fullurl = unwrap(toBytes(fullurl))
+  File "/usr/lib/python2.7/urllib.py", line 1055, in toBytes
+    " contains non-ASCII characters")
+UnicodeError: URL u"https://www.googleapis.com/language/translate/v2?key=AIzaSyAaSZmcHV9aEkY9sjHmrZxuc2F7Qm2Khgw&q='2016 Hackathon \u092e\u0947\u0902 \u0906\u092a\u0915\u093e \u0938\u094d\u0935\u093e\u0917\u0924 \u0939\u0948'&target=en&                              source=hi" contains non-ASCII characters
+ERROR 2016-11-25 09:04:35,926 base 13572 140399022974720 Internal Server Error: /text-to-speech/
+Traceback (most recent call last):
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/surabh/hackathon/snaptran/snapapp/views.py", line 35, in text_to_speech
+    response = urllib.urlopen(URL)
+  File "/usr/lib/python2.7/urllib.py", line 87, in urlopen
+    return opener.open(url)
+  File "/usr/lib/python2.7/urllib.py", line 180, in open
+    fullurl = unwrap(toBytes(fullurl))
+  File "/usr/lib/python2.7/urllib.py", line 1055, in toBytes
+    " contains non-ASCII characters")
+UnicodeError: URL u'https://www.googleapis.com/language/translate/v2?key=AIzaSyAaSZmcHV9aEkY9sjHmrZxuc2F7Qm2Khgw&q=\u0ca8\u0cbf\u0ca8\u0ccd\u0ca8 \u0cb9\u0cc6\u0cb8\u0cb0\u0cc6\u0cd5\u0ca8\u0cc1&target=hi&                              source=ka' contains non-ASCII characters
+ERROR 2016-11-25 11:02:09,649 base 15751 140415432914688 Internal Server Error: /text-to-speech/
+Traceback (most recent call last):
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/surabh/hackathon/snaptran/snapapp/views.py", line 58, in text_to_speech
+    converted_text = converted_text.decode("UTF-8")
+  File "/home/surabh/hackathon/venv/lib/python2.7/encodings/utf_8.py", line 16, in decode
+    return codecs.utf_8_decode(input, errors, True)
+UnicodeEncodeError: 'ascii' codec can't encode characters in position 15-17: ordinal not in range(128)
+ERROR 2016-11-25 11:12:37,419 base 15935 139877165541120 Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/surabh/hackathon/snaptran/snapapp/views.py", line 118, in index
+    return render(request, 'index.html',{"text":text,"converted_text":converted_text,"to_lang":to_lang,"form_lang":form_lang})
+UnboundLocalError: local variable 'to_lang' referenced before assignment
+ERROR 2016-11-25 11:14:30,232 base 15935 139877165541120 Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/surabh/hackathon/snaptran/snapapp/views.py", line 118, in index
+    return render(request, 'index.html',{"text":text,"converted_text":converted_text,"to_lang":to_lang,"form_lang":form_lang})
+UnboundLocalError: local variable 'to_lang' referenced before assignment
+ERROR 2016-11-25 11:17:30,437 base 15935 139877165541120 Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/surabh/hackathon/snaptran/snapapp/views.py", line 118, in index
+    return render(request, 'index.html',{"text":text,"converted_text":converted_text,"to_lang":to_lang,"form_lang":form_lang})
+UnboundLocalError: local variable 'to_lang' referenced before assignment
+ERROR 2016-11-25 11:17:43,950 base 15935 139877165541120 Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/surabh/hackathon/snaptran/snapapp/views.py", line 118, in index
+    return render(request, 'index.html',{"text":text,"converted_text":converted_text,"to_lang":to_lang,"form_lang":form_lang})
+UnboundLocalError: local variable 'to_lang' referenced before assignment
+ERROR 2016-11-25 11:18:06,581 base 15935 139877165541120 Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/surabh/hackathon/snaptran/snapapp/views.py", line 118, in index
+    return render(request, 'index.html',{"text":text,"converted_text":converted_text,"to_lang":to_lang,"form_lang":form_lang})
+UnboundLocalError: local variable 'to_lang' referenced before assignment
+ERROR 2016-11-25 11:18:18,629 base 15935 139877165541120 Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/surabh/hackathon/snaptran/snapapp/views.py", line 118, in index
+    return render(request, 'index.html',{"text":text,"converted_text":converted_text,"to_lang":to_lang,"form_lang":form_lang})
+UnboundLocalError: local variable 'to_lang' referenced before assignment
+ERROR 2016-11-25 11:19:15,946 base 15935 139877165541120 Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/surabh/hackathon/snaptran/snapapp/views.py", line 118, in index
+    return render(request, 'index.html',{"text":text,"converted_text":converted_text,"to_lang":to_lang,"form_lang":form_lang})
+UnboundLocalError: local variable 'to_lang' referenced before assignment
+ERROR 2016-11-25 11:19:28,226 base 15935 139877165541120 Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/surabh/hackathon/snaptran/snapapp/views.py", line 118, in index
+    return render(request, 'index.html',{"text":text,"converted_text":converted_text,"to_lang":to_lang,"form_lang":form_lang})
+UnboundLocalError: local variable 'to_lang' referenced before assignment
+ERROR 2016-11-25 11:19:53,555 base 15935 139877165541120 Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/surabh/hackathon/snaptran/snapapp/views.py", line 118, in index
+    return render(request, 'index.html',{"text":text,"converted_text":converted_text,"to_lang":to_lang,"form_lang":form_lang})
+UnboundLocalError: local variable 'to_lang' referenced before assignment
+ERROR 2016-11-25 11:20:15,264 base 15935 139877165541120 Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/surabh/hackathon/snaptran/snapapp/views.py", line 118, in index
+    return render(request, 'index.html',{"text":text,"converted_text":converted_text,"to_lang":to_lang,"form_lang":form_lang})
+UnboundLocalError: local variable 'to_lang' referenced before assignment
+ERROR 2016-11-25 11:20:27,436 base 15935 139877165541120 Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/surabh/hackathon/snaptran/snapapp/views.py", line 118, in index
+    return render(request, 'index.html',{"text":text,"converted_text":converted_text,"to_lang":to_lang,"form_lang":form_lang})
+UnboundLocalError: local variable 'to_lang' referenced before assignment
+ERROR 2016-11-25 11:20:37,708 base 15935 139877165541120 Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/surabh/hackathon/snaptran/snapapp/views.py", line 118, in index
+    return render(request, 'index.html',{"text":text,"converted_text":converted_text,"to_lang":to_lang,"form_lang":form_lang})
+UnboundLocalError: local variable 'to_lang' referenced before assignment
+ERROR 2016-11-25 11:20:42,994 base 15935 139877165541120 Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/surabh/hackathon/snaptran/snapapp/views.py", line 118, in index
+    return render(request, 'index.html',{"text":text,"converted_text":converted_text,"to_lang":to_lang,"form_lang":form_lang})
+UnboundLocalError: local variable 'to_lang' referenced before assignment
+ERROR 2016-11-25 11:21:07,766 base 15935 139877165541120 Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/surabh/hackathon/snaptran/snapapp/views.py", line 118, in index
+    return render(request, 'index.html',{"text":text,"converted_text":converted_text,"to_lang":to_lang,"form_lang":form_lang})
+UnboundLocalError: local variable 'to_lang' referenced before assignment
+ERROR 2016-11-25 11:21:17,495 base 15935 139877165541120 Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 149, in get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "/home/surabh/hackathon/venv/local/lib/python2.7/site-packages/django/core/handlers/base.py", line 147, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/surabh/hackathon/snaptran/snapapp/views.py", line 118, in index
+    return render(request, 'index.html',{"text":text,"converted_text":converted_text,"to_lang":to_lang,"form_lang":form_lang})
+UnboundLocalError: local variable 'to_lang' referenced before assignment
